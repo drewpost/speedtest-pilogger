@@ -12,7 +12,4 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $INSTALL_KEY
 echo "deb https://ookla.bintray.com/debian ${DEB_DISTRO} main" | sudo tee  /etc/apt/sources.list.d/speedtest.list
 sudo apt-get update
 
-# Other non-official binaries will conflict with Speedtest CLI
-# Example how to remove using apt-get
-# sudo apt-get remove speedtest-cli
-sudo apt-get install speedtest
+Using non official binaries like speedtest-cli will result in a conflict. Make sure to uninstall any before proceeding with this. 
